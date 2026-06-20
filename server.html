@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sleep Debt Calculator</title>
+  <link rel="stylesheet" href="server.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>😴 Sleep Debt Calculator</h1>
+    <p>Check if you are getting enough sleep every week</p>
+
+    <div class="card">
+
+      <label>Monday</label>
+      <input type="number" id="mon" placeholder="Hours">
+
+      <label>Tuesday</label>
+      <input type="number" id="tue">
+
+      <label>Wednesday</label>
+      <input type="number" id="wed">
+
+      <label>Thursday</label>
+      <input type="number" id="thu">
+
+      <label>Friday</label>
+      <input type="number" id="fri">
+
+      <label>Saturday</label>
+      <input type="number" id="sat">
+
+      <label>Sunday</label>
+      <input type="number" id="sun">
+
+      <label>Ideal Hours per Night</label>
+      <input type="number" id="ideal" value="8">
+
+      <button onclick="calculateSleepDebt()">Calculate</button>
+
+      <div id="result"></div>
+
+    </div>
+
+  </div>
+
+  <script src="server.js"></script>
+</body>
+</html>
